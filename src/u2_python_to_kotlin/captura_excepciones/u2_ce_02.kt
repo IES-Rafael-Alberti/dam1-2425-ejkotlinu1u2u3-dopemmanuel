@@ -8,6 +8,7 @@ fun comprobarNum(): Int {
 
     var active = false
     var numIn = 0
+
     while (!active) {
         try {
             var numero = readln().toString()?.trim()

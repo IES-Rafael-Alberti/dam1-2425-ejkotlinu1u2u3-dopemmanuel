@@ -1,6 +1,15 @@
-package u2_python_to_kotlin.sentencias_iterativas
-/***/
+package com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas
+/**Escribir un programa que pregunte al usuario su edad y muestre
+por pantalla todos los años que ha cumplido (desde 1 hasta su edad).*/
 
-/*fun ejemplo() {
 
-}*/
+
+fun indiciado2() {
+    var edad = 0
+    println("Ingrese su edad: ")
+    edad = readln().toInt()
+    for (i in 1..edad) {
+        println("Año $i")
+    }
+
+}

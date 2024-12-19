@@ -30,17 +30,17 @@ import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_condicionales.princi
 import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_condicionales.principal4
 import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_condicionales.principal5
 // Sentencias iterativas
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentences_iterativas.indiciado2
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentences_iterativas.indiciado4
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentences_iterativas.indiciado6
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentences_iterativas.indiciado7
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentences_iterativas.indiciado8
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentences_iterativas.indiciado10
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentences_iterativas.indiciado13
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentences_iterativas.indiciado15
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentences_iterativas.indiciado18
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentences_iterativas.indiciado19
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentences_iterativas.indiciado25
+import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado2
+import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado4
+//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado6
+//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado7
+//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado8
+//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado10
+//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado13
+//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado15
+//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado18
+//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado19
+//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado25
 // u3_python_to_kotlin
 //import com.dam1.kotlinbasico.
 
@@ -205,8 +205,8 @@ fun sentenciasIterativas() {
     val option = readln().toIntOrNull()
 
     when (option) {
-        //1 -> indiciado2()
-        //2 -> indiciado4()
+        1 -> indiciado2()
+        2 -> indiciado4()
         //3 -> indiciado6()
         //4 -> indiciado7()
         //5 -> indiciado8()
