@@ -32,17 +32,32 @@ import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_condicionales.princi
 // Sentencias iterativas
 import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado2
 import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado4
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado6
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado7
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado8
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado10
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado13
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado15
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado18
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado19
-//import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado25
+import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado6
+import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado7
+import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado8
+import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado10
+import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado13
+import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado15
+import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado18
+import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado19
+import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado25
 // u3_python_to_kotlin
-//import com.dam1.kotlinbasico.
+// Conjuntos
+import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter1
+//import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter2
+//import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter3
+//import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter4
+//import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter5
+//import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter6
+// Diccionarios
+//import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted1
+//import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted2
+//import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted3
+//import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted4
+//import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted5
+// Listas y Tuplas
+//import com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas.listas1
+//import com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas.listas2
 
 
 
@@ -69,7 +84,7 @@ fun menu() {
                 limpiarConsola()
             }
             3 -> {
-                // ejerciciosU3()
+                ejerciciosU3()
             }
             4 -> {
                 println("Re-creado por: Emmanuel")
@@ -144,7 +159,6 @@ fun ejerciciosU2() {
     }
 
 }
-
 fun capturaExceptiones() {
     println("selecciona el ejercicio: ")
     println("\n")
@@ -162,7 +176,6 @@ fun capturaExceptiones() {
         else -> println("Opción no válida, intenta nuevamente.")
     }
 }
-
 fun sentenciasCondicionales() {
     println("selecciona el ejercicio: ")
     println("\n")
@@ -186,7 +199,6 @@ fun sentenciasCondicionales() {
     }
 
 }
-
 fun sentenciasIterativas() {
     println("selecciona el ejercicio: ")
     println("\n")
@@ -207,20 +219,65 @@ fun sentenciasIterativas() {
     when (option) {
         1 -> indiciado2()
         2 -> indiciado4()
-        //3 -> indiciado6()
-        //4 -> indiciado7()
-        //5 -> indiciado8()
-        //6 -> indiciado10()
-        //7 -> indiciado13()
-        //8 -> indiciado15()
-        //9 -> indiciado18()
-        //10 -> indiciado19()
-        //11 -> indiciado25()
+        3 -> indiciado6()
+        4 -> indiciado7()
+        5 -> indiciado8()
+        6 -> indiciado10()
+        7 -> indiciado13()
+        8 -> indiciado15()
+        9 -> indiciado18()
+        10 -> indiciado19()
+        11 -> indiciado25()
         0 -> return
         else -> println("Opción no válida, intenta nuevamente.")
     }
 
 }
+
+fun ejerciciosU3() {
+    println("\nSelecciona el ejercicio: ")
+    println("\n")
+    println("1. Conjuntos")
+    println("2. Diccionarios")
+    println("3. Listas y tuplas")
+    println("0. Regresar al menú principal")
+    println("\n")
+    print("Elige una opción: ")
+    val option = readln().toIntOrNull()
+
+    when (option) {
+        1 -> conjuntos()
+        //2 -> diccionarios()
+        //3 -> listas()
+        0 -> return
+        else -> println("Opción no válida, intenta nuevamente.")
+    }
+}
+fun conjuntos() {
+    println("selecciona el ejercicio: ")
+    println("\n")
+    println("1. U3_C_01")
+    println("2. U3_C_02")
+    println("3. U3_C_03")
+    println("4. U3_C_04")
+    println("5. U3_C_05")
+    println("6. U3_C_06")
+    println("0. Para volver al menú de opciones")
+    val option = readln().toIntOrNull()
+
+    when (option) {
+        1 -> starter1()
+        //2 -> starter2()
+        //3 -> starter3()
+        //4 -> starter4()
+        //5 -> starter5()
+        //6 -> starter6()
+        0 -> return
+        else -> println("Opción no válida, intenta nuevamente.")
+    }
+}
+
+
 fun main() {
     intro()
     pause("continuar")
