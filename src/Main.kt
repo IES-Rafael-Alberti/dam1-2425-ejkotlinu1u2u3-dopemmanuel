@@ -44,20 +44,26 @@ import com.dam1.kotlinbasico.u2_python_to_kotlin.sentencias_iterativas.indiciado
 // u3_python_to_kotlin
 // Conjuntos
 import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter1
-//import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter2
-//import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter3
-//import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter4
-//import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter5
-//import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter6
+import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter2
+import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter3
+import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter4
+import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter5
+import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter6
 // Diccionarios
-//import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted1
-//import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted2
-//import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted3
-//import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted4
-//import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted5
+import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted1
+import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted2
+import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted3
+import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted4
+import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted5
+import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted6
+import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted7
 // Listas y Tuplas
-//import com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas.listas1
-//import com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas.listas2
+import com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas.listas1
+import com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas.listas2
+import com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas.listas3
+import com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas.listas4
+import com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas.listas5
+import com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas.listas6
 
 
 
@@ -247,8 +253,8 @@ fun ejerciciosU3() {
 
     when (option) {
         1 -> conjuntos()
-        //2 -> diccionarios()
-        //3 -> listas()
+        2 -> diccionarios()
+        3 -> listasYtuplas()
         0 -> return
         else -> println("Opción no válida, intenta nuevamente.")
     }
@@ -267,15 +273,62 @@ fun conjuntos() {
 
     when (option) {
         1 -> starter1()
-        //2 -> starter2()
-        //3 -> starter3()
-        //4 -> starter4()
-        //5 -> starter5()
-        //6 -> starter6()
+        2 -> starter2()
+        3 -> starter3()
+        4 -> starter4()
+        5 -> starter5()
+        6 -> starter6()
         0 -> return
         else -> println("Opción no válida, intenta nuevamente.")
     }
 }
+fun diccionarios() {
+    println("selecciona el ejercicio: ")
+    println("\n")
+    println("1. U3_DC_01")
+    println("2. U3_DC_02")
+    println("3. U3_DC_03")
+    println("4. U3_DC_04")
+    println("5. U3_DC_05")
+    println("6. U3_DC_06")
+    println("7. U3_DC_07")
+    println("0. Para volver al menú de opciones")
+    val option = readln().toIntOrNull()
+    when (option) {
+        1 -> dicted1()
+        2 -> dicted2()
+        3 -> dicted3()
+        4 -> dicted4()
+        5 -> dicted5()
+        6 -> dicted6()
+        7 -> dicted7()
+        0 -> return
+        else -> println("Opción no válida, intenta nuevamente.")
+    }
+}
+fun listasYtuplas() {
+    println("selecciona el ejercicio: ")
+    println("\n")
+    println("1. U3_LT_01")
+    println("2. U3_LT_02")
+    println("3. U3_LT_03")
+    println("4. U3_LT_04")
+    println("5. U3_LT_05")
+    println("6. U3_LT_06")
+    println("0. Selecione cero para volver al menú de opciones")
+    val option = readln().toIntOrNull()
+    when (option) {
+        1 -> listas1()
+        2 -> listas2()
+        3 -> listas3()
+        4 -> listas4()
+        5 -> listas5()
+        6 -> listas6()
+        0 -> return
+        else -> println("Opción no válida, intenta nuevamente.")
+    }
+}
+
 
 
 fun main() {

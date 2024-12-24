@@ -21,7 +21,7 @@ fun clientesDomicilios(ventas: List<Triple<String, Int, Double>>): Map<String, L
 
 fun starter1() {
     val ventas = listOf(
-        Triple("Nuria Costa", 5, 12780.78,),
+        Triple("Nuria Costa", 5, 12780.78),
         Triple("Jorge Russo", 7, 699.0),
         Triple("Nuria Costa", 7, 532.90),
         Triple("Julián Rodriguez", 12, 5715.99),
