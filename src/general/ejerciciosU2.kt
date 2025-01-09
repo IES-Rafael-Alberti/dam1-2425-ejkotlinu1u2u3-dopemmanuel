@@ -1,6 +1,4 @@
 package com.dam1.kotlinbasico.general
-
-import com.dam1.kotlinbasico.general.utilidades_kts.limpiarConsola
 // CAPTURA DE EXCEPCIONES
 import com.dam1.kotlinbasico.general.ejercicios.u2_python_to_kotlin.captura_excepciones.inicial
 import com.dam1.kotlinbasico.general.ejercicios.u2_python_to_kotlin.captura_excepciones.inicial2
@@ -37,24 +35,11 @@ fun ejerciciosU2() {
     val option = readln().toIntOrNull()
 
     when (option) {
-        1 -> {
-            limpiarConsola()
-            capturaExceptiones()
-        }
-        2 -> {
-            limpiarConsola()
-            sentenciasCondicionales()
-        }
-        3 -> {
-            limpiarConsola()
-            sentenciasIterativas()
-        }
-        0 -> return
-        else -> {
-            println("Opción no válida, intenta nuevamente.")
-            limpiarConsola()
-            return ejerciciosU2()
-        }
+        1 -> capturaExceptiones()
+        2 -> sentenciasCondicionales()
+        3 -> sentenciasIterativas()
+        0 -> return menu()
+        else -> println("Opción no válida, intenta nuevamente.")
     }
 
 }
@@ -69,24 +54,11 @@ fun capturaExceptiones() {
     val option = readln().toIntOrNull()
 
     when (option) {
-        1 -> {
-            limpiarConsola()
-            inicial()
-        }
-        2 -> {
-            limpiarConsola()
-            inicial2()
-        }
-        3 -> {
-            limpiarConsola()
-            inicial3()
-        }
-        0 -> return
-        else -> {
-            println("Opción no válida, intenta nuevamente.")
-            limpiarConsola()
-            return capturaExceptiones()
-        }
+        1 -> inicial()
+        2 -> inicial2()
+        3 -> inicial3()
+        0 -> return menu()
+        else -> println("Opción no válida, intenta nuevamente.")
     }
 }
 fun sentenciasCondicionales() {
@@ -101,32 +73,13 @@ fun sentenciasCondicionales() {
     val option = readln().toIntOrNull()
 
     when (option) {
-        1 -> {
-            limpiarConsola()
-            principal1()
-        }
-        2 -> {
-            limpiarConsola()
-            principal2()
-        }
-        3 -> {
-            limpiarConsola()
-            principal3()
-        }
-        4 -> {
-            limpiarConsola()
-            principal4()
-        }
-        5 -> {
-            limpiarConsola()
-            principal5()
-        }
-        0 -> return
-        else -> {
-            println("Opción no válida, intenta nuevamente.")
-            limpiarConsola()
-            return sentenciasCondicionales()
-        }
+        1 -> principal1()
+        2 -> principal2()
+        3 -> principal3()
+        4 -> principal4()
+        5 -> principal5()
+        0 -> return menu()
+        else -> println("Opción no válida, intenta nuevamente.")
 
     }
 
@@ -149,55 +102,18 @@ fun sentenciasIterativas() {
     val option = readln().toIntOrNull()
 
     when (option) {
-        1 -> {
-            limpiarConsola()
-            indiciado2()
-        }
-        2 -> {
-            limpiarConsola()
-            indiciado4()
-        }
-        3 -> {
-            limpiarConsola()
-            indiciado6()
-        }
-        4 -> {
-            limpiarConsola()
-            indiciado7()
-        }
-        5 -> {
-            limpiarConsola()
-            indiciado8()
-        }
-        6 -> {
-            limpiarConsola()
-            indiciado10()
-        }
-        7 -> {
-            limpiarConsola()
-            indiciado13()
-        }
-        8 -> {
-            limpiarConsola()
-            indiciado15()
-        }
-        9 -> {
-            limpiarConsola()
-            indiciado18()
-        }
-        10 -> {
-            limpiarConsola()
-            indiciado19()
-        }
-        11 -> {
-            limpiarConsola()
-            indiciado25()
-        }
-        0 -> return
-        else -> {
-            println("Opción no válida, intenta nuevamente.")
-            limpiarConsola()
-            return sentenciasIterativas()
-        }
+        1 -> indiciado2()
+        2 -> indiciado4()
+        3 -> indiciado6()
+        4 -> indiciado7()
+        5 -> indiciado8()
+        6 -> indiciado10()
+        7 -> indiciado13()
+        8 -> indiciado15()
+        9 -> indiciado18()
+        10 -> indiciado19()
+        11 -> indiciado25()
+        0 -> return menu()
+        else -> println("Opción no válida, intenta nuevamente.")
     }
 }
