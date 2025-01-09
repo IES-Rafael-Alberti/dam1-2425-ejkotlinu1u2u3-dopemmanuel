@@ -1,4 +1,4 @@
-package com.dam1.kotlinbasico.introducional_kts
+package com.dam1.kotlinbasico.general.utilidades_kts
 
 
 fun intro() {

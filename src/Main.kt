@@ -3,9 +3,11 @@ package com.dam1.kotlinbasico
 // introducional_kts
 import com.dam1.kotlinbasico.general.menu
 
-import com.dam1.kotlinbasico.introducional_kts.limpiarConsola
-import com.dam1.kotlinbasico.introducional_kts.intro
-import com.dam1.kotlinbasico.introducional_kts.pause
+import com.dam1.kotlinbasico.general.utilidades_kts.limpiarConsola
+import com.dam1.kotlinbasico.general.utilidades_kts.intro
+import com.dam1.kotlinbasico.general.utilidades_kts.pause
+
+
 
 /** general.ejercicios.u1_python_to_kotlin
 import com.dam1.kotlinbasico.general.ejercicios.u1_python_to_kotlin.grados

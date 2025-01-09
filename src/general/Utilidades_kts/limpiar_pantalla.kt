@@ -1,7 +1,7 @@
-package com.dam1.kotlinbasico.introducional_kts
+package com.dam1.kotlinbasico.general.utilidades_kts
 
 fun limpiarConsola() {
-    (1..5).forEach {
+    (1..50).forEach {
         println()
     }
 }

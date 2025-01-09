@@ -1,6 +1,7 @@
 package com.dam1.kotlinbasico.general.ejercicios.u1_python_to_kotlin
 
-
+import com.dam1.kotlinbasico.general.utilidades_kts.pause
+import com.dam1.kotlinbasico.general.ejerciciosU1
 // import kotlin.math.round
 /**Magina que acabas de abrir una nueva cuenta de ahorros que te ofrece el 4% de interés al año. Estos ahorros debido a intereses,
 que no se cobran hasta finales de año, se te añaden al balance final de tu cuenta de ahorros. Escribir un programa que
@@ -30,6 +31,10 @@ fun depositoAhorros() {
                 dineroFloat *= 1 + cuenta
                 println("El ahorro tras $anios años es: ${"%.2f".format(dinero)}")
             }
+            pause("continuar")
+            println("\n")
+            return ejerciciosU1()
+
         }catch (e: NumberFormatException) {
             println("ERR0R: ${e.message}")
         } catch (e: IllegalArgumentException) {

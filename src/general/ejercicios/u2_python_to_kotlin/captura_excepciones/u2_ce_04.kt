@@ -8,15 +8,15 @@ fun capturarExceptiones(): Int {
     while (active) {
         try {
             println("Escriba un número abajo: ")
-            val number = readln().toString()?.trim()
+            var number = readln().toString().trim()
 
-            if (number == null || number.isEmpty()) {
-                throw IllegalArgumentException("El numero introducido no es correcto")
+            if (number.isEmpty()) {
+                throw IllegalArgumentException("El campo no debe estar vacío.")
             }
             if (number.contains(".")) {
                 throw NumberFormatException("El numero introducido no debe ser decimal.")
             }
-            numbEn = number.toIntOrNull() ?: throw NumberFormatException("El numero introducido no es un número entero.")
+            val numbEn = number.toIntOrNull() ?: throw NumberFormatException("El numero introducido no es un número entero.")
 
             if (numbEn < 0) {
                 throw IllegalArgumentException("El numero introducido debe ser positivo.")

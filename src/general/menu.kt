@@ -1,10 +1,10 @@
 package com.dam1.kotlinbasico.general
 
-import com.dam1.kotlinbasico.introducional_kts.limpiarConsola
+import com.dam1.kotlinbasico.general.utilidades_kts.limpiarConsola
+import com.dam1.kotlinbasico.general.utilidades_kts.pause
 
 fun menu() {
     var active = true
-
     while (active) {
         println("\nMenu")
         println("1. Ejercicios de la Unidad 1")
@@ -17,27 +17,42 @@ fun menu() {
 
         when (option) {
             1 -> {
-                ejerciciosU1()
+                println("Entrando a los ejercicios de la Unidad 1...")
+                Thread.sleep(3000)
                 limpiarConsola()
+                ejerciciosU1()
             }
             2 -> {
-                ejerciciosU2()
+                println("Entrando a los ejercicios de la Unidad 2...")
+                Thread.sleep(4000)
                 limpiarConsola()
+                ejerciciosU2()
             }
             3 -> {
-                ejerciciosU3()
+                println("Entrando a los ejercicios de la Unidad 3...")
+                Thread.sleep(5000)
                 limpiarConsola()
+                ejerciciosU3()
             }
             4 -> {
+                println("\n")
                 println("Re-creado por: Emmanuel")
                 println("Fecha de creación: 2024-12-16\nFecha de finalizacion: 2024-12-24")
+                pause("continuar")
+                println("\n")
+                limpiarConsola()
             }
             5 -> {
                 println("Saliendo del programa...")
                 active = false
             }
             else -> {
+                println("\n")
                 println("Opción no válida, intenta nuevamente.")
+                Thread.sleep(2000)
+                println("\n")
+                limpiarConsola()
+
             }
         }
     }

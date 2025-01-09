@@ -1,9 +1,11 @@
 package com.dam1.kotlinbasico.general.ejercicios.u1_python_to_kotlin
+
+import com.dam1.kotlinbasico.general.utilidades_kts.pause
+import com.dam1.kotlinbasico.general.ejerciciosU1
 /**Escribir un programa que pregunte al usuario la fecha de su nacimiento en formato dd/mm/aaaa y muestra por pantalla, el día, el mes y el año.
 Adaptar el programa anterior para que también funcione cuando el día o el mes se introduzcan con un solo carácter.*/
 
 fun fechaNacimiento(){
-
     var active = true
     while (active) {
         try {
@@ -12,7 +14,8 @@ fun fechaNacimiento(){
 
             if (fecha.size != 3) {
                 println("Error: La fecha no es correcta")
-                return fechaNacimiento()}
+                return fechaNacimiento()
+            }
 
             var dia = fecha[0]
             var mes = fecha[1]
@@ -28,18 +31,22 @@ fun fechaNacimiento(){
                 println("\n")
                 println("La fecha de nacimiento es: $diaInt/$mesInt/$anioInt")
                 active = false
-            }
-            else {
+            } else {
                 println("Dia o mes incorrecto o fuera de rango")
                 println("\n")
                 println("Queres volver a ingresar la fecha de nacimiento?")
                 val opcion = readln().trim()
                 if (opcion == "si" || opcion == "sí" || opcion == "yes" || opcion == "y" || opcion == "s") {
                     fechaNacimiento()
-                }else {
+                } else {
+                    println("\n")
+                    println("Saliendo del programa...")
                     active = false
                 }
             }
+            pause("continuar")
+            println("\n")
+            return ejerciciosU1()
         }catch (e: IllegalArgumentException) {
             println("ERROR: ${e.message}")
     }catch (_: NumberFormatException) {

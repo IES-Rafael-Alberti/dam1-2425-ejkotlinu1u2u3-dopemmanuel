@@ -13,6 +13,7 @@ import com.dam1.kotlinbasico.general.ejercicios.u1_python_to_kotlin.fechaNacimie
 import com.dam1.kotlinbasico.general.ejercicios.u1_python_to_kotlin.productoCesta
 import com.dam1.kotlinbasico.general.ejercicios.u1_python_to_kotlin.precioUnidad
 
+import com.dam1.kotlinbasico.general.utilidades_kts.limpiarConsola
 
 fun ejerciciosU1() {
     println("\nSelecciona el ejercicio: ")
@@ -35,19 +36,55 @@ fun ejerciciosU1() {
     val option = readln().toIntOrNull()
 
     when (option) {
-        1 -> grados()
-        2 -> pagarImporte()
-        3 -> pedirPesoyEstatura()
-        4 -> depositoAhorros()
-        5 -> repetirNombre()
-        6 -> numeroTelefono()
-        7 -> fraseInvertida()
-        8 -> vocalEnMayusculas()
-        9 -> precioEuros()
-        10 -> fechaNacimiento()
-        11 -> productoCesta()
-        12 -> precioUnidad()
-        0 -> return menu()
+        1 -> {
+            limpiarConsola()
+            grados()
+        }
+        2 -> {
+            limpiarConsola()
+            pagarImporte()
+        }
+        3 -> {
+            limpiarConsola()
+            pedirPesoyEstatura()
+        }
+        4 -> {
+            limpiarConsola()
+            depositoAhorros()
+        }
+        5 -> {
+            limpiarConsola()
+            repetirNombre()
+        }
+        6 -> {
+            limpiarConsola()
+            numeroTelefono()
+        }
+        7 -> {
+            limpiarConsola()
+            fraseInvertida()
+        }
+        8 -> {
+            limpiarConsola()
+            vocalEnMayusculas()
+        }
+        9 -> {
+            limpiarConsola()
+            precioEuros()
+        }
+        10 -> {
+            limpiarConsola()
+            fechaNacimiento()
+        }
+        11 -> {
+            limpiarConsola()
+            productoCesta()
+        }
+        12 -> {
+            limpiarConsola()
+            precioUnidad()
+        }
+        0 -> return
         else -> println("Opción no válida, intenta nuevamente.")
     }
 }

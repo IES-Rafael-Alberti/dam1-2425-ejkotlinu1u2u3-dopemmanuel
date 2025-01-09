@@ -2,6 +2,8 @@ package com.dam1.kotlinbasico.general.ejercicios.u1_python_to_kotlin
 
 import kotlin.math.round
 
+import com.dam1.kotlinbasico.general.utilidades_kts.pause
+import com.dam1.kotlinbasico.general.ejerciciosU1
 /**Escribir un programa que pida al usuario su peso (en kg) y estatura (en metros), calcule el índice de masa corporal
 y lo almacene en una variable, y muestre por pantalla la frase Tu índice de masa corporal es donde es el índice de masa
 corporal calculado redondeado con dos decimales.*/
@@ -39,6 +41,9 @@ fun pedirPesoyEstatura() {
                 println("Tu índice de masa corporal es: ${round(imc)}.")
                 active = false
             }
+            pause("continuar")
+            println("\n")
+            ejerciciosU1()
         }catch (e: NumberFormatException) {
             println("ERR0R: ${e.message}")
         } catch (e: IllegalArgumentException) {

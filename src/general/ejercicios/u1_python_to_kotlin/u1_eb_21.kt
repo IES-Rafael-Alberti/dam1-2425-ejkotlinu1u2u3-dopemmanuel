@@ -1,9 +1,10 @@
 package com.dam1.kotlinbasico.general.ejercicios.u1_python_to_kotlin
 
+import com.dam1.kotlinbasico.general.utilidades_kts.pause
+import com.dam1.kotlinbasico.general.ejerciciosU1
 /** Escribir un programa que pida al usuario que introduzca una frase en la consola y muestre por pantalla la frase invertida.*/
 
 fun fraseInvertida() {
-
     var active = true
     while (active) {
         try {
@@ -12,16 +13,16 @@ fun fraseInvertida() {
             if (frase.isEmpty() || frase.isBlank()) {
                 throw IllegalArgumentException("Debe ingresar una frase no lo puedes dejar en blanco.")
             }
-
             println("\n")
-
-            var fraseInvertida = frase.reversed()
+            val fraseInvertida = frase.reversed()
             println("La frase invertida es: $fraseInvertida")
             active = false
+            pause("continuar")
+            println("\n")
+            return ejerciciosU1()
+
         }catch (e: IllegalArgumentException) {
             println("ERROR: ${e.message}")
-        }catch (_: NumberFormatException) {
-            println("ERR0R: Debe ingresar un número válido que no sea de tipo string.")
         }
     }
 }

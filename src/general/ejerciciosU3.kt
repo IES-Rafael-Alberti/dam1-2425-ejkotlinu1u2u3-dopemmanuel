@@ -35,7 +35,7 @@ fun ejerciciosU3() {
         1 -> conjuntos()
         2 -> diccionarios()
         3 -> listasYtuplas()
-        0 -> return menu()
+        0 -> return
         else -> println("Opción no válida, intenta nuevamente.")
     }
 }
