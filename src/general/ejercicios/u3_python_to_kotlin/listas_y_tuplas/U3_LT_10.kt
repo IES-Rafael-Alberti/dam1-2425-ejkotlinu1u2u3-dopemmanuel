@@ -1,6 +1,6 @@
 @file:Suppress("UNCHECKED_CAST")
 
-package com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas
+package com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.listas_y_tuplas
 
 /**Escribir un programa que permita gestionar la base de datos de clientes de una
 empresa. Los clientes se guardarán en un diccionario en el que la clave de cada

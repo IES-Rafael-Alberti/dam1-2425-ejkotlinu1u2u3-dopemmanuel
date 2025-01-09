@@ -1,4 +1,4 @@
-package com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos
+package com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.conjuntos
 
 /**El conjunto potencia de un conjunto S es el conjunto de todos los subconjuntos de S.
 

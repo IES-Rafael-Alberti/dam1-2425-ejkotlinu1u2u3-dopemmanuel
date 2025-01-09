@@ -1,4 +1,4 @@
-package com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos
+package com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.conjuntos
 
 /**Solicitar al usuario que introduzca los nombres de pila de los alumnos de primaria de una escuela, finalizando cuando se introduzca “x”. A continuación, solicitar que introduzca los nombres de los alumnos de secundaria, finalizando al introducir “x”.
 

@@ -1,4 +1,7 @@
-package com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos
+package com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.conjuntos
+
+import com.dam1.kotlinbasico.general.utilidades_kts.pause
+import com.dam1.kotlinbasico.general.utilidades_kts.limpiarConsola
 
 /**Suponer una lista con datos de las compras hechas por clientes de una empresa a lo largo de un mes, la cual contiene tuplas con información de cada venta: (cliente, día del mes, monto, domicilio del cliente). Ejemplo:
 
@@ -29,4 +32,7 @@ fun starter1() {
     )
     val clientesDomicilios = clientesDomicilios(ventas)
     println(clientesDomicilios)
+    pause("continuar")
+    println("\n")
+    limpiarConsola()
 }

@@ -1,4 +1,4 @@
-package com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas
+package com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.listas_y_tuplas
 
 import kotlin.math.pow
 import kotlin.math.sqrt

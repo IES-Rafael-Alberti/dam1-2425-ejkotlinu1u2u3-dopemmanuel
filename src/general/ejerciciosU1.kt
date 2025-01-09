@@ -85,6 +85,10 @@ fun ejerciciosU1() {
             precioUnidad()
         }
         0 -> return
-        else -> println("Opción no válida, intenta nuevamente.")
+        else -> {
+            println("Opción no válida, intenta nuevamente.")
+            limpiarConsola()
+            return ejerciciosU1()
+        }
     }
 }

@@ -50,7 +50,11 @@ fun ejerciciosU2() {
             sentenciasIterativas()
         }
         0 -> return
-        else -> println("Opción no válida, intenta nuevamente.")
+        else -> {
+            println("Opción no válida, intenta nuevamente.")
+            limpiarConsola()
+            return ejerciciosU2()
+        }
     }
 
 }
@@ -78,7 +82,11 @@ fun capturaExceptiones() {
             inicial3()
         }
         0 -> return
-        else -> println("Opción no válida, intenta nuevamente.")
+        else -> {
+            println("Opción no válida, intenta nuevamente.")
+            limpiarConsola()
+            return capturaExceptiones()
+        }
     }
 }
 fun sentenciasCondicionales() {
@@ -114,7 +122,11 @@ fun sentenciasCondicionales() {
             principal5()
         }
         0 -> return
-        else -> println("Opción no válida, intenta nuevamente.")
+        else -> {
+            println("Opción no válida, intenta nuevamente.")
+            limpiarConsola()
+            return sentenciasCondicionales()
+        }
 
     }
 
@@ -182,6 +194,10 @@ fun sentenciasIterativas() {
             indiciado25()
         }
         0 -> return
-        else -> println("Opción no válida, intenta nuevamente.")
+        else -> {
+            println("Opción no válida, intenta nuevamente.")
+            limpiarConsola()
+            return sentenciasIterativas()
+        }
     }
 }

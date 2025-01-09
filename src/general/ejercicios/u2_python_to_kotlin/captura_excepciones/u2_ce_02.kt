@@ -1,25 +1,24 @@
 package com.dam1.kotlinbasico.general.ejercicios.u2_python_to_kotlin.captura_excepciones
 
-
+import com.dam1.kotlinbasico.general.utilidades_kts.pause
+import com.dam1.kotlinbasico.general.utilidades_kts.limpiarConsola
 /**Escribir un programa que pida al usuario un número entero positivo y muestre por
  * pantalla todos los números impares desde 1 hasta ese número separados por comas.*/
 
 fun comprobarNum(): Int {
-
     var active = false
     var numIn = 0
-
     while (!active) {
         try {
-            var numero = readln().toString()?.trim()
+            var numero = readln().toString().trim()
 
-            if ( numero == null || numero.isEmpty()) {
+            if (numero.isEmpty()) {
                 throw IllegalArgumentException("El numero introducido no es correcto")
             }
             if (numero.contains(".")) {
                 throw NumberFormatException("El numero introducido no debe ser decimal")
             }
-            numIn = numero.toIntOrNull() ?: throw NumberFormatException("El numero introducido no es un número entero")
+            val numIn = numero.toIntOrNull() ?: throw NumberFormatException("El numero introducido no es un número entero")
 
             if (numIn < 0) {
                 throw IllegalArgumentException("El numero introducido debe ser positivo")
@@ -49,4 +48,7 @@ fun inicial() {
     println("Escriba un número positivo: ")
     val numIn = comprobarNum()
     println("Los números impares son: ${numerosImpares(numIn)}")
+    pause("continuar")
+    println("\n")
+    limpiarConsola()
 }

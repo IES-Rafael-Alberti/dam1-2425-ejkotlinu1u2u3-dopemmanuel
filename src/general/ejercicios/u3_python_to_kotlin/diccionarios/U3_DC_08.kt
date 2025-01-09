@@ -1,4 +1,4 @@
-package com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios
+package com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.diccionarios
 
 /**Escribir un programa que cree un diccionario de traducción español-inglés.
  * El usuario introducirá las palabras en español e inglés separadas por dos puntos,

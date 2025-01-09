@@ -1,4 +1,4 @@
-package com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios
+package com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.diccionarios
 
 /**Escribir un programa que cree un diccionario simulando una cesta de la compra.
  * El programa debe preguntar el artículo y su precio y añadir el par al diccionario,

@@ -1,4 +1,4 @@
-package com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas
+package com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.listas_y_tuplas
 
 /**Escribir un programa que pida al usuario una palabra y muestre por
  * pantalla si es un palíndromo.*/

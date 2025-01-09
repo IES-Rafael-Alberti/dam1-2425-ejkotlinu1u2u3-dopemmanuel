@@ -1,4 +1,7 @@
 package com.dam1.kotlinbasico.general.ejercicios.u2_python_to_kotlin.sentencias_iterativas
+
+
+import com.dam1.kotlinbasico.general.utilidades_kts.pause
 /**Escribir un programa que pida al usuario un número entero
 y muestre por pantalla un triángulo rectángulo como el de más abajo.
 
@@ -8,7 +11,6 @@ y muestre por pantalla un triángulo rectángulo como el de más abajo.
 7 5 3 1
 9 7 5 3 1
  */
-
 
 fun pedirNum(): Int {
     var numero: Int? = null
@@ -47,5 +49,7 @@ fun indiciado8() {
             valor -= 2
         }
         println(linea.trim())
+        println("\n")
+        pause("continuar")
     }
 }
