@@ -1,4 +1,7 @@
 package com.dam1.kotlinbasico.general.ejercicios.u1_python_to_kotlin
+
+import com.dam1.kotlinbasico.general.utilidades_kts.pause
+import com.dam1.kotlinbasico.general.ejerciciosU1
 /**Escribir un programa que pregunte por consola el precio de un producto en euros con dos
 decimales y muestre por pantalla el número de euros y el número de céntimos del precio introducido.*/
 
@@ -19,6 +22,10 @@ fun precioEuros() {
             val centimos = (price - euros) * 100
             println("El precio en euros es: $euros")
             println("El precio en céntimos es: $centimos")
+            pause("continuar")
+            println("\n")
+            return ejerciciosU1()
+
         }catch (e: IllegalArgumentException) {
             println("ERROR: ${e.message}")
         }catch (_: NumberFormatException) {

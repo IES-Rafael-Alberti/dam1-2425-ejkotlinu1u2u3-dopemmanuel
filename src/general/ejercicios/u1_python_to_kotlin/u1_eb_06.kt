@@ -1,5 +1,7 @@
 package com.dam1.kotlinbasico.general.ejercicios.u1_python_to_kotlin
 
+import com.dam1.kotlinbasico.general.utilidades_kts.pause
+import com.dam1.kotlinbasico.general.ejerciciosU1
 /**Escribe un programa que pida el importe final de un artículo y calcule e
  * imprima por pantalla el IVA que se ha pagado y el importe sin IVA (suponiendo que se ha aplicado un tipo de IVA del 10%).*/
 
@@ -26,6 +28,10 @@ fun pagarImporte() {
             println("El IVA pagado es: $iva")
             println("El importe final con IVA es: $ivaPagado")
             active = false
+            pause("continuar")
+            println("\n")
+            return ejerciciosU1()
+
         }catch (_: NumberFormatException) {
             println("ERR0R: Debe ingresar un importe válido que no sea de tipo string.")
         } catch (e: IllegalArgumentException) {

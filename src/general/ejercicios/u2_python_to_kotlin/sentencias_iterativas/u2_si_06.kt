@@ -10,13 +10,13 @@ un triángulo rectángulo como el de más abajo, de altura el número introducid
 
 Modo simple:
 
-{
+
 println("*\n"),
 println("* *\n"),
 println("* * *\n"),
 println("* * * *\n"),
 println("* * * * *\n"),
-}*/
+*/
 
 
 fun pedirNumero(): Int? {
