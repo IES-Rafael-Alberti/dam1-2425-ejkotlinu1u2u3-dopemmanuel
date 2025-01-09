@@ -1,24 +1,24 @@
 package com.dam1.kotlinbasico.general
 
-import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter1
-import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter2
-import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter3
-import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter4
-import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter5
-import com.dam1.kotlinbasico.u3_python_to_kotlin.conjuntos.starter6
-import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted1
-import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted2
-import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted3
-import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted4
-import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted5
-import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted6
-import com.dam1.kotlinbasico.u3_python_to_kotlin.diccionarios.dicted7
-import com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas.listas1
-import com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas.listas2
-import com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas.listas3
-import com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas.listas4
-import com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas.listas5
-import com.dam1.kotlinbasico.u3_python_to_kotlin.listas_y_tuplas.listas6
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.conjuntos.starter1
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.conjuntos.starter2
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.conjuntos.starter3
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.conjuntos.starter4
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.conjuntos.starter5
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.conjuntos.starter6
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.diccionarios.dicted1
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.diccionarios.dicted2
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.diccionarios.dicted3
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.diccionarios.dicted4
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.diccionarios.dicted5
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.diccionarios.dicted6
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.diccionarios.dicted7
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.listas_y_tuplas.listas1
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.listas_y_tuplas.listas2
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.listas_y_tuplas.listas3
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.listas_y_tuplas.listas4
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.listas_y_tuplas.listas5
+import com.dam1.kotlinbasico.general.ejercicios.u3_python_to_kotlin.listas_y_tuplas.listas6
 
 fun ejerciciosU3() {
     println("\nSelecciona el ejercicio: ")
